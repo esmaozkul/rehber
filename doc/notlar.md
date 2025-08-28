@@ -54,3 +54,17 @@ Crud işlemlerini yerine getirebilsin.
   2025_08_28_120001_create_unvanlar_table ............................................................................ 11.02ms DONE
 
 - Laravel Projesi oluşturuldu.Servisi başlatmak için php artisan serve komutu çalıştırılır.
+
+cd ile klasöre geç git clone git@github.com:esmaozkul/rehber.git ile klasörü githubdan al
+
+'git.env' dosyasının '.env' olarak değiştirilecek
+
+- database tanımları '.env' dosyasına eklenecek
+- 'composer install' ile composer paketler kurulacak
+- 'php artisan key:generate' ile key oluşturulacak
+- 'php artisan migrate' ile migrationlar uygulanır
+- 'php artisan route:list' ile route listesi kontrol edilir
+- 'php artisan serve' ile servis başlatılır
+
+## API Testi
+'api-test.http' dosyası içerisinde testler yapılır.

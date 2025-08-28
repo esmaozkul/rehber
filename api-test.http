@@ -48,7 +48,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "unvan_adi": "Uzman"
+  "unvan_adi": "profesyonel"
 }
 
 ### Unvanlar - Göster
@@ -67,3 +67,4 @@ Accept: application/json
 ### Unvanlar - Sil
 DELETE {{baseUrl}}/api/unvanlar/{{unvanId}}
 Accept: application/json
+
