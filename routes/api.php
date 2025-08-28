@@ -12,5 +12,5 @@ Route::apiResource('birimler', BirimController::class)
 Route::apiResource('unvanlar', UnvanController::class)
     ->parameters(['unvanlar' => 'unvan']);
 
-Route::apiResource('personeller', PersonelController::class)
-    ->parameters(['personeller' => 'personel']);
+Route::apiResource('personel', PersonelController::class)
+    ->parameters(['personel' => 'personel']);

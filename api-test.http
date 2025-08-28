@@ -68,3 +68,40 @@ Accept: application/json
 DELETE {{baseUrl}}/api/unvanlar/{{unvanId}}
 Accept: application/json
 
+@personelId = 1
+
+### personel - Listele
+GET {{baseUrl}}/api/personel
+Accept: application/json
+
+### personel - Oluştur
+POST {{baseUrl}}/api/personel
+Content-Type: application/json
+Accept: application/json
+
+{
+  "adi_soyadi": "Ali Veli",
+  "unvan_id": 1,
+  "birim_id": 2,
+  "notlar": "Deneme personel kaydı"
+}
+
+### personel - Göster
+GET {{baseUrl}}/api/personel/{{personelId}}
+Accept: application/json
+
+### personel - Güncelle (PATCH)
+PATCH {{baseUrl}}/api/personel/{{personelId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "adi_soyadi": "Ali Veli Demir",
+  "unvan_id": 1,
+  "birim_id": 1,
+  "notlar": "Güncellenmiş not"
+}
+
+### personel - Sil
+DELETE {{baseUrl}}/api/personel/{{personelId}}
+Accept: application/json
