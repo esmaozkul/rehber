@@ -10,6 +10,13 @@
 - id
 - unvan_adi
 
+### Personel
+- id
+- adi_soyadi
+- unvan_id
+- birim_id
+- notlar
+
 ## İş listesi
 - Önce adminer ile rehber adlı veri tabanı oluşturulur 
 - .env dosyasına veri tabanı bilgileri girilir.
