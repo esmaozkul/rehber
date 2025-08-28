@@ -1,0 +1,69 @@
+### REST Client test dosyası
+# VS Code REST Client eklentisi ile çalışır: https://marketplace.windsurf.com/extension/humao/rest-client
+# Gerekli ise baseUrl'i kendi ortamına göre değiştir (ör: Laragon için http://laravel.test)
+
+@baseUrl = http://127.0.0.1:8000
+@birimId = 1
+@unvanId = 1
+
+### Birimler - Listele
+GET {{baseUrl}}/api/birimler
+Accept: application/json
+
+### Birimler - Oluştur
+POST {{baseUrl}}/api/birimler
+Content-Type: application/json
+Accept: application/json
+
+{
+  "birim_adi": "Mali işler",
+  "konumu": "Ankara"
+}
+
+### Birimler - Göster
+GET {{baseUrl}}/api/birimler/{{birimId}}
+Accept: application/json
+
+### Birimler - Güncelle (PATCH)
+PATCH {{baseUrl}}/api/birimler/{{birimId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "birim_adi": "Ar-Ge",
+  "konumu": "İzmir"
+}
+
+### Birimler - Sil
+DELETE {{baseUrl}}/api/birimler/{{birimId}}
+Accept: application/json
+
+### Unvanlar - Listele
+GET {{baseUrl}}/api/unvanlar
+Accept: application/json
+
+### Unvanlar - Oluştur
+POST {{baseUrl}}/api/unvanlar
+Content-Type: application/json
+Accept: application/json
+
+{
+  "unvan_adi": "Uzman"
+}
+
+### Unvanlar - Göster
+GET {{baseUrl}}/api/unvanlar/{{unvanId}}
+Accept: application/json
+
+### Unvanlar - Güncelle (PATCH)
+PATCH {{baseUrl}}/api/unvanlar/{{unvanId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "unvan_adi": "Kıdemli Uzman"
+}
+
+### Unvanlar - Sil
+DELETE {{baseUrl}}/api/unvanlar/{{unvanId}}
+Accept: application/json
